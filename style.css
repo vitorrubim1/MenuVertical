@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgba(235, 233, 255, 0.486);
+}
+nav.menu{
+    display: inline-block;
+
+    height: 100vh;
+    width: 400px;
+    
+    background-color: white;
+
+    border-right: 2px solid #001f3f;
+}
+header{
+    height: 10vh;
+    min-width: 20px;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000cc;
+
+    border-bottom: 1px solid #a1a1a1a2;
+}
+
+section.corpoMenu{
+    margin-top: 10vh;
+    
+    width: 90%;
+    margin-left: auto;
+    margin-left: auto;
+}   
+.fas{
+    color:#000000aa;
+}
+.fa-eye{
+    cursor: pointer;
+}
+form input, form button{  
+    border:none;
+    width: 90% !important;
+
+    border-radius: 6px;
+}
+.label-input{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 10px 16px; /*isso determina o tamanho*/
+
+    border-radius: 6px;
+    border: 1.5px #001f3f solid;
+    width: 90% !important;
+}
+form button{
+    font-weight: bold;
+    background-color: transparent;
+    border: 1.5px #001f3f solid;
+    margin: 10px;
+    padding: 10px 16px; /*isso determina o tamanho*/
+    width: 90% !important;
+}
+form button:hover{
+    background-color: #001f3f;
+    transition: all 400ms;
+    color:rgba(255, 255, 255, 0.918);
+}
+.description{
+    font-size: 14px;
+    font-weight: 300; /*Para deixar a letra fina*/
+    line-height: 30px; /*Altura de linhas*/
+}
+.description-second{
+    color: #7f8c8d;
+    margin: 0 50px;
+}
+.social-media{
+    margin: 1rem 50px;
+}
+/*poupar css*/
+.link-social-media:not(:first-child){
+    margin-left: 30px;
+}
+.link-social-media .item-social-media{
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #001f3f;
+    color: #fff;
+    border-color: #001f3f;
+}
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media{
+    border:1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    /*o icon é considerada uma fonte então da pra alinhar normalmente*/
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    color:#95a5a6;
+}
+
+span.spanLink{
+    color: #00000099;
+    font-size: 12px;
+
+    margin-left: 110px;
+    min-width: 20px;
+
+}
+span.spanLink a{
+    color:#001f3f;
+}
+
+button{
+    margin-right: 20px;
+}
+#ativa{
+    padding: 10px 16px;
+    margin: 10px 30px;
+
+    background-color: #001f3f;
+    color:rgba(255, 255, 255, 0.918);
+
+    border:none;
+    border-radius:4px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    float: right;
+}
+
+nav.menu.hide{
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    margin-right: 400px;
+}
+nav.menu{
+    transition: ease 290ms;
+}
